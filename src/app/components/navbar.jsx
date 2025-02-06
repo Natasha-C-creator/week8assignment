@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+const navbar = () => {
   return (
     <>
       <div className="w-full h-20 bg-emerald-800 sticky top-0">
@@ -14,11 +14,11 @@ const Navbar = () => {
               </li>
               <li>
                 <Link href="/posts">
-                  <p>Articles</p>
+                  <p>Posts</p>
                 </Link>
               </li>
               <li>
-                <Link href="/about">
+                <Link href="/pages/aboutpage">
                   <p>About</p>
                 </Link>
               </li>
@@ -30,4 +30,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default navbar;

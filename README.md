@@ -39,6 +39,9 @@ SUPABASE SCHEMA:
 
 ----What useful external sources helped you complete the assignment (e.g Youtube tutorials)?
 https://www.geeksforgeeks.org/how-to-add-a-favicon-to-a-next-js-static-site/
+https://coolors.co/palettes/popular
+unsplash.com
+https://medium.com/@a.pirus/how-to-create-a-responsive-navigation-bar-in-next-js-13-e5540789a017
 
 ----What errors or bugs did you encounter while completing your assignment? How did you solve them?
 

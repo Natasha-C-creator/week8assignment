@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Head from "next/head";
-import Navbar from "./components/navbar";
+import navbar from "./components/navbar";
 import Header from "./components/header";
 
 const styles = {
@@ -38,7 +38,7 @@ export default function HomePage() {
       <Head>
         <link rel="icon" href="/favicon.png" type="image/png" />
       </Head>
-      <Navbar />
+      <navbar />
       <Header />
       <div style={styles.container}>
         <div style={styles.imageWrapper}>
@@ -62,7 +62,9 @@ export default function HomePage() {
               priority="false"
               // placeholder="blur"
             />
-            <p style={styles.imageText}>10 foods that nourish the soul, and 2 that will surprise you</p>
+            <p style={styles.imageText}>
+              10 foods that nourish the soul, and 2 that will surprise you
+            </p>
           </div>
           <div style={styles.imageContainer}>
             <Image
@@ -73,7 +75,7 @@ export default function HomePage() {
               priority="false"
               // placeholder="blur"
             />
-            <p style={styles.imageText}>Why it's time to try forest bathing</p>
+            <p style={styles.imageText}>Why it is time to try forest bathing</p>
           </div>
         </div>
       </div>

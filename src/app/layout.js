@@ -1,7 +1,6 @@
-//To check all available fonts, press command or control + click on the name of the font, and it will take you to the index.d.ts file where there is a list of available fonts
-
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navbar";
 
 const roboto = Roboto_Mono({ weight: "300", subsets: ["latin"] });
 
@@ -13,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
