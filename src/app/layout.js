@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+//To check all available fonts, press command or control + click on the name of the font, and it will take you to the index.d.ts file where there is a list of available fonts
+
+//import the font
+import { Roboto_Mono } from "next/font/google";
+
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+//we need to configure our font with different properties
+const roboto = Roboto_Mono({ weight: "500", subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -19,11 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      {/* apply the font */}
+      <body className={roboto.className}>{children}</body>
     </html>
   );
 }
+
+//you can also use fonts locally stored
