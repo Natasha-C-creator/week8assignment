@@ -4,7 +4,7 @@ import "./header.css";
 export default function header() {
   return (
     <>
-      <h2 className="header"> Comments ❤️ </h2>
+      <h2 className="header"> Slow Living </h2>
     </>
   );
 }
